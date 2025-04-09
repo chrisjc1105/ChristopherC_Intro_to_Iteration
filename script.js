@@ -29,12 +29,16 @@ console.log('Hello!');
 let fruits = ["Apple", "Pear", "Orange", "Kiwi", "Cherry"];
 
 for (let i = 0; i < fruits.length; i++) {
+    // sift through entire catalog/row of fruits 
     console.log(`The fruit at index ${i} is ${fruits[i]}.`)
+    // print every iteration
     if (fruits[i] != "Orange") {
         console.log(`${fruits[i]} is not an Orange.`);
+        // print this if the fruit is not an orange
     } else {
         console.log(`Orange found! Ending loop.`);
         break;
+        // print this if the fruit is an orange and end the for loop
     }
 }
 
@@ -73,8 +77,14 @@ while (i < 7) {
 
 // Exercise 3 - Doubling Numbers Until 100
 
-let num = 2; 
+let num = 2;
+//initialize variable at 2 
 do {
-console.log(num);
-num = num * 2; 
+    num = num * 2;
+    // first iteration: num = 2 * 2 --> num = 4
+    // second iteration: num = 4 * 2 --> num = 8 
+    // so on and so forth
+    console.log(num);
+    // print num 
 } while (num < 100);
+// stop the loop if num >= 100 (reaches of exceeds 100);
